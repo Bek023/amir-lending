@@ -1,0 +1,44 @@
+:root {
+  --neometric: "NeometricAltBold";
+  --neometricregular: "NeometricRegular";
+  --neometricItalic: "NeometricItalic";
+  --lightblue: #2596be;
+  --white: #ffffff;
+}
+/* Header */
+html {
+  scroll-behavior: smooth;
+}
+
+.ds-fl-cen-jus-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.fa-location-dot {
+  font-size: 24px;
+  color: #2596be;
+}
+
+.fa-phone,
+.fa-envelope {
+  font-size: 20px;
+  color: #2596be;
+}
+.fa-instagram {
+  font-size: 20px;
+  color: #2596be;
+}
+/* Modal */
+.error .form__input {
+  border-color: red;
+}
+.error-label {
+  color: red;
+  font-size: 12px;
+}
+.d__none {
+  display: none;
+}
