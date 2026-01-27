@@ -10,12 +10,17 @@
     />
     <link
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
     <link rel="stylesheet" href="./css/root.css" />
     <link rel="stylesheet" href="./css/font.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="stylesheet" href="./css/swiper.css" />
 
     <title>Diamond-Dryfruits</title>
   </head>
@@ -39,8 +44,9 @@
         <div class="header__info">
           <div><i class="fa-solid fa-phone"></i></div>
           <div class="header__info-box">
-            <p>+998 90 030 69 68</p>
-            <p>+998 91 536 79 16</p>
+            <p>+998 33 888 83 08</p>
+            <p>+998 33 999 93 09</p>
+            <p>+998 33 333 23 03</p>
           </div>
         </div>
       </div>
@@ -49,6 +55,9 @@
     <main class="main" id="main">
       <div class="container">
         <div class="main__box">
+          <div class="main__first-img">
+            <img src="./Assets/images/main-image.png" alt="" />
+          </div>
           <div class="main__text">
             <h1 class="main__title">Сухофрукты из Узбекистана оптом</h1>
             <div class="main__button-box">
@@ -65,18 +74,14 @@
     </main>
 
     <div class="items limitation" id="item">
-      <div class="items__cont">
-        <div class="items__title-box">
-          <div class="container">
-            <h2 class="items__title">Наш каталог</h2>
-          </div>
+      <div class="swiper mySwiper">
+        <h2 class="items__title">Наш каталог</h2>
+        <div class="swiper-wrapper">
+          <!-- Js Data -->
         </div>
-
-        <div class="container">
-          <div class="items__wrapper">
-            <!-- JS data  -->
-          </div>
-        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
       </div>
     </div>
 
@@ -160,8 +165,9 @@
                   <i class="fa-solid fa-phone"></i>
                 </div>
                 <div>
-                  <p>+998 90 030 69 68</p>
-                  <p>+998 91 536 79 16</p>
+                  <p>+998 33 888 83 08</p>
+                  <p>+998 33 999 93 09</p>
+                  <p>+998 33 333 23 03</p>
                 </div>
               </div>
               <div class="footer__first-items-box">
@@ -259,6 +265,10 @@
       </div>
     </div>
   </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
   <script src="./js/script.js" type="module"></script>
+  <script type="module" src="./js/product.js"></script>
   <script src="./js/modal.js"></script>
+  <script src="./js/swiper.js"></script>
 </html>
