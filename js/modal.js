@@ -67,7 +67,7 @@ function validation(form) {
 document.getElementById("auth").addEventListener("submit", function (event) {
   event.preventDefault();
   const formData = new FormData(document.forms.auth);
-  // Validation
+  // Validation chech
   if (validation(this) == true) {
     fetch("https://api.diamond-dryfruits.com/feedback", {
       method: "POST",
