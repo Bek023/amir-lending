@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./Assets/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="./css/root.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/product.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+
+    <title>Diamond-Dryfruits</title>
+</head>
+
+<body>
+
+    
+
+        <header class="header">
+            <div class="header__box">
+                <div class="header__first-wrp">
+                    <div class="header__logo"><img src="./Assets/images/dryfruits/logo.png" alt="">
+                    </div>
+                    <div class="header__slogan">
+                        <p>Premium Selection</p>
+                    </div>
+                </div>
+                <div class="header__main">
+                    <a href="#main">Главная</a>
+                    <a href="#item">Продукция</a>
+                    <a href="#footer">Контакты</a>
+                </div>
+                <div class="header__info">
+                    <div><i class="fa-solid fa-phone"></i></div>
+                    <div class="header__info-box">
+                        <p>+998 90 030 69 68</p>
+                        <p>+998 91 536 79 16</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main " id="main">
+            <div class="container">
+                <div class="main__box">
+                    <div class="main__first-img"><img src="./Assets/images/main-image.png" alt=""></div>
+                    <div class="main__text">
+                        <h1 class="main__title">Сухофрукты из Узбекистана оптом</h1>
+                        <div class="main__button-box">
+                            <a href="#item"><button class="main__btn main__btn2">Каталог</button></a>
+                            <button class="main__btn" onclick="fncOpen()">Оставить заявку</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="product__info">
+            <div class="produc__info-box">
+
+
+            </div>
+        </div>
+
+        
+            <footer class="footer product__footer" id="footer">
+                <div class="footer__box limitation ds-fl-cen-jus-btn">
+                    <div class="footer__first-wrapper">
+                        <h4 class="footer__title">Контакты</h4>
+                        <div class="footer__first-text-box">
+                            <div class="footer__first-items-box">
+                                <div class="footer__text-circle"><i class="fa-solid fa-location-dot"></i></div>
+                                <p>Узбекистан, г. Самарканд, Населённый Пункт "Чумчукли"</p>
+                            </div>
+                            <div class="footer__first-items-box">
+                                <div class="footer__text-circle"><i class="fa-solid fa-phone"></i></div>
+                                <div>
+                                    <p>+998 90 030 69 68</p>
+                                    <p>+998 91 536 79 16</p>
+                                </div>
+                            </div>
+                            <div class="footer__first-items-box">
+                                <div class="footer__text-circle"><i class="fa-solid fa-envelope"></i></div>
+                                <p>diamond-dryfruits@bk.ru</p>
+                            </div>
+                        </div>
+
+                        <div class="footer__links">
+                            <p>Мы в соц. сетях</p>
+                            <div class="footer__links-itm-box">
+                                <div class="footer__link-itm"><a
+                                        href="https://www.instagram.com/diamond_dryfruit?igsh=d29nMW96ZjYzdDA0"><i
+                                            class="fa-brands fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__second-wrapper">
+                        <div class="footer__second-iframe">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3072.2360003577232!2d67.0400510757872!3d39.644402971574294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMznCsDM4JzM5LjkiTiA2N8KwMDInMzMuNSJF!5e0!3m2!1sru!2s!4v1768759652328!5m2!1sru!2s"
+                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        
+    </div>
+
+
+    <div class="big__label">
+        <div class="content">
+            <div class="close__form"><i class="fa-solid fa-xmark" onclick="fncClose()"></i></div>
+            <form action="#" id="auth" class="form" enctype="multipart/form-data">
+                <div class="form__logo"><img src="./Assets/images/dryfruits/logo.png" alt=""></div>
+                <p class="form__title">Оставьте заявку и наш менеджер свяжется с вами</p>
+                <div class="form__box">
+                    <div class="input__box">
+                        <input data-min-length="3" type="text" name="name" placeholder="Ваше имя" class="form__input">
+                    </div>
+                    <div class="input__box">
+                        <input type="number" data-min-length="6" name="phone" placeholder="Ваш номер телефона"
+                            class="form__input">
+                    </div>
+                    <div class="input__box">
+                        <input type="text" data-min-length="3" name="email" placeholder="Ваш email" class="form__input">
+                    </div>
+                    <div class="input__box">
+                        <input type="text" data-min-length="3" name="country" placeholder="Ваша страна"
+                            class="form__input">
+                    </div>
+                    <button type="submit" name="submit" class="form__btn">Оставить заявку</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+<!-- <script src="./js/script.js" type="module"></script> -->
+<script src="./js/product.js" type="module"></script>
+<script src="./js/modal.js"></script>
+
+</html>

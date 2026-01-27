@@ -1,7 +1,7 @@
 /* Планшетная версия (до 1024px) */
 @media screen and (max-width: 1024px) {
   .limitation {
-    max-width: max-content;
+    /* max-width: max-content; */
     margin: 70px auto 0 auto;
     padding: 0 20px;
   }
@@ -164,6 +164,32 @@
 
 /* Мобильная версия (до 600px) */
 @media screen and (max-width: 600px) {
+  body .main__first-img {
+    height: 300px;
+    width: 300px;
+  }
+  body .swiper__cont {
+    /* max-width: 300px; */
+  }
+  body .swiper-wrapper {
+    width: 100%;
+  }
+  body .swiper-slide {
+    width: 280px;
+  }
+  .item__logo-img {
+    width: 180px;
+    height: 180px;
+  }
+  .item__title p {
+    font-size: 14px;
+  }
+  .item__suptitles p {
+    font-size: 12px;
+  }
+  .item__btn button {
+    font-size: 12px;
+  }
   body .header__main {
     display: flex;
     align-items: center;

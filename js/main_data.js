@@ -6,7 +6,7 @@ export const itemsData = [
             'Сорт - высший',
             'Тип сушки - Теневая',
             'Упаковка - коробка 10кг'
-        ]
+        ],
     },
     {
         image: './Assets/images/dryfruits/maiz-golden.jpg',
