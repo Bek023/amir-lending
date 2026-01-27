@@ -3,7 +3,7 @@ name: Deploy Dryfruits Landing
 on:
     push:
         branches:
-            - master
+            - main
 
 jobs:
     deploy:
@@ -21,3 +21,4 @@ jobs:
                   key: ${{ secrets.SERVER_SSH_KEY }}
                   source: '.'
                   target: '/www/wwwroot/dryfruits/lending'
+
