@@ -128,8 +128,7 @@
   justify-content: space-between;
 }
 
-.main__text {
-}
+.main__text {}
 
 .main__title {
   cursor: default;
@@ -277,9 +276,6 @@
   color: var(--lightblue);
 }
 
-.swiper-pagination {
-  margin-top: 50px;
-}
 
 .conditions {
   padding: 70px;
