@@ -20,26 +20,6 @@ document.addEventListener("keydown", function (event) {
   }
 });
 
-// Notification function
-function showNotification(message, isSuccess) {
-  console.log('Showing notification:', message, isSuccess);
-  const notif = document.getElementById('notification');
-  const text = document.getElementById('notification-text');
-  if (!notif || !text) {
-    console.error('Notification elements not found');
-    return;
-  }
-  text.textContent = message;
-  notif.className = 'notification'; // reset classes
-  notif.classList.add(isSuccess ? 'success' : 'error');
-  notif.classList.remove('hidden');
-  setTimeout(() => notif.classList.add('show'), 10); // small delay to trigger transition
-  setTimeout(() => {
-    notif.classList.remove('show');
-    setTimeout(() => notif.classList.add('hidden'), 300);
-  }, 3000);
-}
-
 //
 
 function validation(form) {
@@ -90,19 +70,14 @@ document.getElementById("auth").addEventListener("submit", function (event) {
   event.preventDefault();
   const formData = new FormData(document.forms.auth);
   if (validation(this) == true) {
-    // Временная заглушка для тестирования
-    setTimeout(() => {
-      showNotification("Заявка успешно отправлена!", true);
-      fncClose();
-    }, 1000);
-
     fetch("https://api.diamond-dryfruits.com/feedback", {
       method: "POST",
       body: formData,
     })
       .then((res) => {
         if (res.ok) {
-          console.log(res)
+          alert("Заявка успешно отправлена!");
+          fncClose();
         }
       })
       .catch((err) => {
