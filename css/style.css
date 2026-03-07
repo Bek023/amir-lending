@@ -673,3 +673,35 @@
   width: 400px;
   height: 300px;
 }
+
+/* Notification */
+.notification {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 15px 20px;
+  border-radius: 10px;
+  color: var(--white);
+  font-size: 16px;
+  z-index: 1001;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.notification.show {
+  opacity: 1;
+}
+
+.notification.hidden {
+  display: none;
+}
+
+.notification.success {
+  background-color: #28a745;
+}
+
+.notification.error {
+  background-color: #dc3545;
+}
