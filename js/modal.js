@@ -83,6 +83,5 @@ document.getElementById("auth").addEventListener("submit", function (event) {
       .catch((err) => {
         console.log(err);
       });
-
   }
 });
