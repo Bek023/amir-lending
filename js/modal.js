@@ -68,7 +68,6 @@ function validation(form) {
 
 document.getElementById("auth").addEventListener("submit", function (event) {
   event.preventDefault();
-  console.log("sukes");
   const formData = new FormData(document.forms.auth);
   if (validation(this) == true) {
     fetch("https://api.diamond-dryfruits.com/feedback", {
